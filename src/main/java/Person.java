@@ -1,8 +1,8 @@
 public class Person {
-    protected String name;
-    protected int age;
-    protected String gender;
-    protected String role;
+    private String name;
+    private int age;
+    private String gender;
+    private String role;
 
     public Person(String name, int age, String gender, String role) {
         this.name = name;
@@ -17,5 +17,13 @@ public class Person {
 
     public int getAge() {
         return age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public String getRole() {
+        return role;
     }
 }

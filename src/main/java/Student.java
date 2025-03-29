@@ -9,13 +9,13 @@ public class Student extends Person implements Introduce, NewCourse{
     @Override
     public void introduce() {
         String result = String.format("My name is %s, im %d years old," +
-                " im a %s and im a %s in grade %d", name, age, gender, role, grade);
+                " im a %s and im a %s in grade %d", this.getName(), this.getAge(), this.getGender(), this.getRole(), grade);
         System.out.println(result);
     }
 
     @Override
     public void addCourse(String course) {
-        String result = String.format("%s is taking %s", name, course);
+        String result = String.format("%s is taking %s", this.getName(), course);
         System.out.println(result);
     }
 }
