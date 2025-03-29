@@ -1,3 +1,5 @@
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -25,20 +27,15 @@ class StudentTest {
 
     }
 
-    @Test
-    void getRole() {
-        assertEquals("Student", testStudent.getRole());
-    }
-
-    @Test
-    void getGrade() {
-        assertEquals(age - 9, testStudent.getGrade());
+    @AfterEach
+    void tearDown() {
+        System.setOut(originalOut);
     }
 
     @Test
     void printAllInfoAsIntroduction() {
         String result = String.format("My name is %s, im %d years old," +
-                " im a %s and im a %s in grade %d", name, age, gender, testStudent.getRole(), testStudent.getGrade());
+                " im a %s and im a %s in grade %d", name, age, gender, "Student", 5);
         testStudent.introduce();
         assertEquals(result.trim(), outputStream.toString().trim());
     }

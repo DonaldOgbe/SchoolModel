@@ -6,14 +6,6 @@ public class Student extends Person implements Introduce, NewCourse{
         grade = age - 9;
     }
 
-    public int getGrade() {
-        return grade;
-    }
-
-    public String getRole() {
-        return this.role;
-    }
-
     @Override
     public void introduce() {
         String result = String.format("My name is %s, im %d years old," +
