@@ -10,4 +10,13 @@ public class Person {
         this.gender = gender;
         this.role = role;
     }
+
+    public String getName() {
+        return name;
+    }
+
+
+    public int getAge() {
+        return age;
+    }
 }
