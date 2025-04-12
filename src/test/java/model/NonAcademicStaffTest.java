@@ -1,3 +1,5 @@
+package model;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -32,7 +34,7 @@ class NonAcademicStaffTest {
     @Test
     void printAllInfoAsIntroduction() {
         String result = String.format("My name is %s, im %d years old," +
-                " and im a %s %s", name, age, gender, "Non-Academic Staff");
+                " and im a %s %s", name, age, gender, "Non-Academic models.Staff");
         testNonAcademicStaff.introduce();
         assertEquals(result.trim(), outputStream.toString().trim());
     }

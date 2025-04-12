@@ -1,3 +1,5 @@
+package model;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -14,7 +16,7 @@ class PersonTest {
         name = "Pascal";
         age = 28;
         gender = "Male";
-        testPerson = new Person(name, age, gender, "Person");
+        testPerson = new Person(name, age, gender, "models.Person");
     }
 
     @Test
@@ -34,6 +36,6 @@ class PersonTest {
 
     @Test
     void getRole() {
-        assertEquals("Person", testPerson.getRole());
+        assertEquals("models.Person", testPerson.getRole());
     }
 }

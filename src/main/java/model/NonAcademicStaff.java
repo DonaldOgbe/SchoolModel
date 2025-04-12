@@ -1,6 +1,10 @@
-public class NonAcademicStaff extends Staff implements Introduce{
+package model;
+
+import interfaces.Introduce;
+
+public class NonAcademicStaff extends Staff implements Introduce {
     public NonAcademicStaff(String name, int age, String gender) {
-        super(name, age, gender, "Non-Academic Staff");
+        super(name, age, gender, "Non-Academic models.Staff");
     }
 
     @Override

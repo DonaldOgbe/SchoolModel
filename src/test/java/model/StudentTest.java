@@ -1,4 +1,5 @@
-import org.junit.jupiter.api.AfterAll;
+package model;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -35,7 +36,7 @@ class StudentTest {
     @Test
     void printAllInfoAsIntroduction() {
         String result = String.format("My name is %s, im %d years old," +
-                " im a %s and im a %s in grade %d", name, age, gender, "Student", 5);
+                " im a %s and im a %s in grade %d", name, age, gender, "models.Student", 5);
         testStudent.introduce();
         assertEquals(result.trim(), outputStream.toString().trim());
     }

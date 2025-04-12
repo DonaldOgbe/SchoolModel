@@ -1,8 +1,13 @@
-public class Student extends Person implements Introduce, NewCourse{
+package model;
+
+import interfaces.Introduce;
+import interfaces.NewCourse;
+
+public class Student extends Person implements Introduce, NewCourse {
     private final int grade;
 
     public Student(String name, int age, String gender) {
-        super(name, age, gender, "Student");
+        super(name, age, gender, "models.Student");
         grade = age - 9;
     }
 

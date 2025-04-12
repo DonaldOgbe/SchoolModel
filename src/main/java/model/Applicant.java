@@ -1,6 +1,10 @@
-public class Applicant extends Person implements Introduce{
+package model;
+
+import interfaces.Introduce;
+
+public class Applicant extends Person implements Introduce {
     public Applicant(String name, int age, String gender) {
-        super(name, age, gender, "Applicant");
+        super(name, age, gender, "models.Applicant");
     }
 
     @Override

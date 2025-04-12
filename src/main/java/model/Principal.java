@@ -1,6 +1,12 @@
+package model;
+
+import interfaces.AdmitApplicant;
+import interfaces.ExpelStudent;
+import interfaces.Introduce;
+
 public class Principal extends Staff implements Introduce, AdmitApplicant, ExpelStudent {
     public Principal(String name, int age, String gender) {
-        super(name, age, gender, "Principal");
+        super(name, age, gender, "models.Principal");
     }
 
     @Override

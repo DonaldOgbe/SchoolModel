@@ -1,6 +1,11 @@
-public class Teacher extends Staff implements NewCourse, Introduce{
+package model;
+
+import interfaces.Introduce;
+import interfaces.NewCourse;
+
+public class Teacher extends Staff implements NewCourse, Introduce {
     public Teacher(String name, int age, String gender) {
-        super(name, age, gender, "Teacher");
+        super(name, age, gender, "models.Teacher");
     }
 
     @Override
